@@ -1,0 +1,24 @@
+commonfields:
+  id: f32a4a48-9d6f-4401-8ac9-cd2f668ec0f6
+  version: 4
+vcShouldKeepItemLegacyProdMachine: false
+name: TestDocker
+script: |-
+  import falconpy
+  import pandas
+
+  return_results("Imports worked, no error. Test successful.")
+type: python
+tags:
+- test
+comment: Tests importing a couple packages to validate the docker image specified
+  was pulled and worked correctly.
+enabled: true
+scripttarget: 0
+subtype: python3
+pswd: ""
+runonce: false
+dockerimage: chrisbalmer/xsoar-cs-pandas:0.1
+runas: DBotWeakRole
+engineinfo: {}
+mainengineinfo: {}
